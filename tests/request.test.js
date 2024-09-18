@@ -2,9 +2,9 @@ const request = require('supertest');
 const mongoose = require('mongoose');
 const chai = require('chai');
 const expect = chai.expect;
-const app = require('../app.js'); // Adjust the path to your main app file
-const Inventory = require('../models/Inventory.js');
-const InventoryRequest = require('../models/Request.js'); // Adjust based on your structure
+const app = require('../src/app.js');
+const Inventory = require('../src/models/Inventory.js');
+const InventoryRequest = require('../src/models/Request.js'); 
 
 describe('Request Inventory API', () => {
     let token;
