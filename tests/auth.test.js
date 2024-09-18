@@ -1,8 +1,8 @@
 import request from 'supertest';
 import { expect } from 'chai';
 import mongoose from 'mongoose';
-import app from '../app.js'; // Adjust the path to your main app file
-import User from '../models/User.js'; // Adjust the path based on your project structure
+import app from '../src/app.js'; // Adjust the path to your main app file
+import User from '../src/models/User.js'; // Adjust the path based on your project structure
 
 describe('Authentication API', () => {
     before(async () => {
