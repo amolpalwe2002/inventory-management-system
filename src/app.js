@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const inventoryRoutes = require('./routes/inventoryRoutes');
 const requestRoutes = require('./routes/requestRoutes');
-const authRoutes = require('./routes/authRoutes'); // For user authentication
+const authRoutes = require('./routes/authRoutes');
 
 require('dotenv').config();
 
@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URI)
 
 app.use('/api/inventory', inventoryRoutes);
 app.use('/api/requests', requestRoutes);
-app.use('/api/auth', authRoutes); // User authentication routes
+app.use('/api/auth', authRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
