@@ -31,9 +31,3 @@ This is a backend for an Inventory Management System allowing admins to manage s
 - `PATCH /api/requests/:id`: Approve or reject a request (Admin only).
 - `GET /api/requests`: Get all requests (Admin only).
 
-## Testing
-
-Run tests using:
-
-```bash
-npm test
